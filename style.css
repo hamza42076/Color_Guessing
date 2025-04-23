@@ -129,12 +129,26 @@
   }
     
 
-  @media (max-width:425px) {
-    #scorebtn{
-      margin-bottom: 10px;
+  @media (max-width: 768px) {
+    #scorebtn,
+    #refreshBtn {
+      padding: 1.5vh 4vw;
+      font-size: 1rem;
     }
-    #refreshBtn{
-      margin-bottom: 10px;
-    }
-    
   }
+  
+  @media (max-width: 425px) {
+    #scorebtn,
+    #refreshBtn {
+      position: static; /* removes fixed positioning */
+      width: 90%;
+      margin: 10px auto;
+      display: block;
+      text-align: center;
+    }
+  
+    #main {
+      padding: 20px; /* reduce padding on smaller screens */
+    }
+  }
+  
